@@ -1,0 +1,50 @@
+.item{
+  border: 1px dashed #D7DDE9;
+  padding: 16px;
+  border-radius: 8px;
+  .container{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    border: 0;
+    padding: 0;
+    .checkbox{
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      p{
+        font-size: 16px;
+        text-align: start !important;
+        color: #000;
+      }
+      p.ativo{ 
+        text-decoration: line-through !important;
+      }
+      .check{
+        margin: 0;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        background: white;
+        box-shadow: none;
+        border: 1px solid #D7DDE9;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button.ativo{
+        background: #A0DCF6!important;
+        border: 1px solid #0796D3 !important;
+      }
+    }
+    .delete{
+      cursor: pointer;
+    }
+  }
+}
+.item:hover{
+  background-color: #F7F9FD;
+  cursor: pointer;
+}
